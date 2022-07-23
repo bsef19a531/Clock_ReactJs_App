@@ -1,0 +1,17 @@
+.clock {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock_time {
+    font-size: 5rem;
+    color: rgb(0, 162, 255);
+
+}
+
+.clock_heading {
+    font-size: 5rem;
+    color: rgb(0, 162, 255);
+}

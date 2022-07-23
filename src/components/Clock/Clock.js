@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./Clock.module.css";
 
 const Clock = () => {
 
@@ -15,8 +16,11 @@ const Clock = () => {
     setInterval(updateTime, 1000);
 
     return (
-        <div>
-            <input value={currentTime} />
+        <div className={styles.clock}>
+            <h1 className={styles.clock_heading}>React Clock</h1>
+            <div className={styles.clock_time}>
+                {currentTime}
+            </div>
         </div>
     )
 }
