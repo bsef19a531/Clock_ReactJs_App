@@ -1,17 +1,72 @@
+@font-face {
+    font-family: digital;
+    src: url('../Fonts/digital.ttf');
+}
+
+@font-face {
+    font-family: Kanit;
+    src: url("../Fonts/Kanit.ttf");
+}
+
 .clock {
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
+}
+
+.clock_border {
+    border: 10px solid white;
+    border-radius: 30px;
+    margin-top: 20px;
+    width: 490px;
 }
 
 .clock_time {
-    font-size: 5rem;
-    color: rgb(0, 162, 255);
-
+    background-image: url("./clock-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 30px;
+    font-size: 5.2rem;
+    color: #00a2ff;
+    text-shadow: 1px 1px 8px rgb(0, 242, 255);
+    padding: 20px 40px 0px 40px;
+    box-sizing: border-box;
+    font-family: digital;
+    text-align: center;
 }
 
 .clock_heading {
     font-size: 5rem;
     color: rgb(0, 162, 255);
+    font-family: Kanit !important;
+}
+
+.clock_dot {
+    color: white;
+    display: flex;
+    justify-content: right;
+    margin: -90px 40px 0px 0px;
+    font-size: 5rem;
+    color: #d10707;
+    text-shadow: 1px 1px 8px rgb(242, 56, 56);
+}
+
+@media (max-width:500px) {
+    .clock_border {
+        border: 7px solid white;
+        width: 235px;
+        border-radius: 25px;
+    }
+
+    .clock_time {
+        font-size: 2.2rem;
+        padding: 10px 20px 0px 20px;
+
+    }
+
+    .clock_heading {
+        font-size: 2.6rem;
+    }
 }

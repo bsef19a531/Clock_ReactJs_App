@@ -25,8 +25,9 @@
     float: right;
 }
 
-@media (max-width:460px) {
+@media (max-width:500px) {
     .clock {
-        font-size: 1rem;
+        font-size: .85rem;
+        padding: 0 20px;
     }
 }
