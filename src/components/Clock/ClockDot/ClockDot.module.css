@@ -4,41 +4,14 @@
 }
 
 
-
-/* .clock_dot {
-    color: white;
-    display: flex;
-    justify-content: right;
-    width: 20%;
-    margin: 0px; */
-/* position: relative;
-    bottom: 20px;
-    left: 315px; */
-/* font-size: 1rem;
-    color: #d10707;
-    text-shadow: 1px 1px 8px rgb(242, 56, 56);
-} */
-
-/* .clock_day {
-    margin: 0px;
-    color: rgb(242, 56, 56);
-    font-size: 1.4rem;
-    bottom: 20px;
-    left: 40px;
-    width: 50%;
-    position: relative;
-    font-family: digital;
-} */
-
-
 .clock {
     margin-bottom: 10px;
-    /* display: flex;
-    flex-direction: row; */
     color: red;
     font-family: digital;
     font-size: 1.3rem;
     padding: 0px 40px;
+    color: #00a2ff;
+    text-shadow: 1px 1px 8px rgb(0, 242, 255);
 }
 
 .clock_date {
@@ -47,5 +20,7 @@
 }
 
 .clock_dot {
+    color: red;
+    text-shadow: 1px 1px 8px red;
     float: right;
 }
