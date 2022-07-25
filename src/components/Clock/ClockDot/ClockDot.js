@@ -4,10 +4,10 @@ import styles from "./ClockDot.module.css";
 const ClockDot = (props) => {
 
     const [currentDot, setDotState] = useState(props.dotValue);
-    const [currentDay, setCurrentDay] = useState("MON");
-    const [currentMonth, setCurrentMonth] = useState("JAN");
-    const [currentDate, setCurrentDate] = useState("1");
-    const [currentYear, setCurrentYear] = useState("2022");
+    const [currentDay, setCurrentDay] = useState("-");
+    const [currentMonth, setCurrentMonth] = useState("-");
+    const [currentDate, setCurrentDate] = useState("-");
+    const [currentYear, setCurrentYear] = useState("----");
 
 
     if (currentDay !== props.day) {

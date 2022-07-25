@@ -1,0 +1,21 @@
+.switch {
+    display: flex;
+    justify-content: end;
+    width: 490px;
+    margin: auto;
+    padding: 10px;
+}
+
+.switch input {
+    margin: 15px;
+}
+
+.switch input:checked {
+    background-color: rgb(78, 78, 78);
+}
+
+.switch label {
+    color: white;
+    margin: 10px;
+    font-weight: 500;
+}
