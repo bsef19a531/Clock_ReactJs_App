@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       < Clock />
-      <Switch />
+      <Switch title="Dark Mode" />
     </>
   );
 }
