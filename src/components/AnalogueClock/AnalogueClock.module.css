@@ -14,10 +14,12 @@
     background-color: dodgerblue;
     height: 24%;
     width: 2.7%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 100%;
     top: 26%;
     left: 48.65%;
+    transform-origin: bottom;
+    box-shadow: 1px 1px 5px rgb(74, 74, 74);
 }
 
 .minute {
@@ -25,10 +27,12 @@
     background-color: #00a2ff;
     height: 34%;
     width: 2%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 100%;
     top: 16%;
     left: 49%;
+    transform-origin: bottom;
+    box-shadow: 1px 1px 5px rgb(74, 74, 74);
 }
 
 .second {
@@ -39,4 +43,6 @@
     border-radius: 100%;
     top: 10%;
     left: 49.5%;
+    transform-origin: bottom;
+    box-shadow: 1px 1px 5px rgb(74, 74, 74);
 }

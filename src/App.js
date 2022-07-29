@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       < Clock />
-      {/* <Switch title="Light Mode" /> */}
-      <AnalogueClock />
+      <Switch title="Light Mode" />
+      {/* <AnalogueClock /> */}
     </>
   );
 }

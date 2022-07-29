@@ -1,27 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Clock.module.css";
 import ClockDot from "./ClockDot/ClockDot";
 
 const Clock = () => {
 
-    let time = new Date().toLocaleTimeString();
-    let day = new Date().getDay();
-    let date = new Date().getDate();
-    let year = new Date().getFullYear();
-    let month = new Date().getMonth();
+    let currentDate = new Date();
+    let time = currentDate.toLocaleTimeString();
+    let day = currentDate.getDay();
+    let date = currentDate.getDate();
+    let year = currentDate.getFullYear();
+    let month = currentDate.getMonth();
 
     const monthList = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
     const dayList = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
     const [currentTime, setcurrentTime] = useState(time);
 
+    useEffect(() => {
+        clearInterval(settedInterval);
+        // console.log("runDigital");
+    }, [currentTime]);
 
     const updateTime = () => {
         time = new Date().toLocaleTimeString();
         setcurrentTime(time);
     }
 
-    setInterval(updateTime, 1000);
+    const settedInterval = setInterval(updateTime, 1000);
 
     return (
         <div className={styles.clock}>
