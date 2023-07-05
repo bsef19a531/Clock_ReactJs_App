@@ -9,13 +9,12 @@ function App() {
 
   const [currentClock, setCurrentClock] = useState(switchClock);
   const setClockType = (switchCondition) => {
-    setCurrentClock(switchCondition);
-    console.log("hit");
+    setCurrentClock(!switchCondition);
   }
 
   return (
     <>
-      {currentClock ? < Clock /> : <AnalogueClock />}
+      {currentClock ? <AnalogueClock /> : < Clock />}
       <Switch title="Clock Mode" set={setClockType} />
       {/* <AnalogueClock /> */}
     </>
